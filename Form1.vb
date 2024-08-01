@@ -53,7 +53,7 @@
 
     Private Sub btn9_Click(sender As Object, e As EventArgs) Handles btn9.Click
         TextBox1.Text = "9"
-
+    End Sub
 
     ''button1 will be the 0 button
     ''button2 will be the 1 btn
