@@ -23,6 +23,34 @@
         TextBox1.Text = "2"
     End Sub
 
+    Private Sub btn3_Click(sender As Object, e As EventArgs) Handles btn3.Click
+
+    End Sub
+
+    Private Sub btn4_Click(sender As Object, e As EventArgs) Handles btn4.Click
+
+    End Sub
+
+    Private Sub btn5_Click(sender As Object, e As EventArgs) Handles btn5.Click
+
+    End Sub
+
+    Private Sub btn6_Click(sender As Object, e As EventArgs) Handles btn6.Click
+
+    End Sub
+
+    Private Sub btn7_Click(sender As Object, e As EventArgs) Handles btn7.Click
+
+    End Sub
+
+    Private Sub btn8_Click(sender As Object, e As EventArgs) Handles btn8.Click
+
+    End Sub
+
+    Private Sub btn9_Click(sender As Object, e As EventArgs) Handles btn9.Click
+
+    End Sub
+
     ''button1 will be the 0 button
     ''button2 will be the 1 btn
     ''button3 will be 23
