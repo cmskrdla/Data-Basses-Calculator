@@ -1,4 +1,6 @@
-﻿Imports System.Diagnostics.CodeAnalysis
+﻿Imports System.CodeDom
+Imports System.Diagnostics.CodeAnalysis
+Imports System.Globalization
 Imports System.Security.Cryptography.Xml
 Imports System.Text
 
@@ -69,6 +71,9 @@ Public Class Form1
 
     Dim number2 As Double
 
+    Dim number3 As Double
+
+    Dim number4 As Double
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If TextBox1.Text.Length = 0 Then
             Exit Sub
@@ -77,21 +82,8 @@ Public Class Form1
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-
-        getnumber1()
-        TextBox1.Clear()
-        getNumber2()
-        TextBox1.Clear()
-        'Dim number3 As Double
-        'number1+number2 = number3
-        'number3 =Do.add({number1} + {number2}) End Do
-        'If btnequalto = True Then
-        '    TextBox1.Text = number3
-        'Else
-        '    TextBox1.Clear()
-
-        'End If
-        'btnequalto = False
+        add()
+        number3 = number4
     End Sub
 
     Private Function getnumber1()
@@ -99,19 +91,26 @@ Public Class Form1
         Return number1
     End Function
     Private Function getNumber2()
-        If btnequalto = True Then
-            number2 = TextBox1.Text
-            Return number2
-        Else Exit Function
-        End If
+        number2 = TextBox1.Text
+        Return number2
     End Function
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
-        btnequalto = True
+        TextBox1.Text = number3
     End Sub
 
+    Private Function add()
+        getnumber1()
+        TextBox1.Clear()
+        'read line
+        getNumber2()
+        TextBox1.Clear()
+        number4 = number1 + number2
+        Return number4
+    End Function
 
     'numbers inserted and named by Clare, Appended and linked by Bern. 
+
 
     ''button1 will be the 0 button
     ''button2 will be the 1 btn
