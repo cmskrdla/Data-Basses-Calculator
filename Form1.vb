@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.Text
+
+Public Class Form1
     Public Sub New()
 
         ' This call is required by the designer.
@@ -6,34 +8,38 @@
 
         ' Add any initialization after the InitializeComponent() call.
 
+        problem = TextBox1.Text
+
     End Sub
+
+    Dim problem As String
+
     Private Sub btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
-        TextBox1.Text = "0"
+        TextBox1.Text.Append("0")
     End Sub
 
     Private Sub btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
         TextBox1.Text.Append("1")
-        'Bern&Clare
     End Sub
 
     Private Sub btnPi_Click(sender As Object, e As EventArgs) Handles btnPi.Click
-
+        TextBox1.Text.Append("3.14159")
     End Sub
     Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
-        TextBox1.Text = "2"
+        TextBox1.Text.Append("2")
     End Sub
 
     Private Sub btn3_Click(sender As Object, e As EventArgs) Handles btn3.Click
-        TextBox1.Text = "3"
+        TextBox1.Text.Append("3")
     End Sub
 
     Private Sub btn4_Click(sender As Object, e As EventArgs) Handles btn4.Click
-        TextBox1.Text = "4"
+        TextBox1.Text.Append("4")
 
     End Sub
 
     Private Sub btn5_Click(sender As Object, e As EventArgs) Handles btn5.Click
-        TextBox1.Text = "5"
+        TextBox1.Text.Append("5")
 
     End Sub
 
