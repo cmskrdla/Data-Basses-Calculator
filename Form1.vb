@@ -55,6 +55,10 @@
         TextBox1.Text = "9"
     End Sub
 
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        TextBox1.Text = ""
+    End Sub
+
     ''button1 will be the 0 button
     ''button2 will be the 1 btn
     ''button3 will be 23
