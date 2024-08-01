@@ -6,7 +6,8 @@
     End Sub
 
     Public Function Add(number1 As Double, number2 As Double) As Double Implements ICalculator.Add
-        Throw New NotImplementedException()
+        ''Clare''
+        Return number2 + number1
     End Function
 
     Public Function Divide(number1 As Double, number2 As Double) As Double Implements ICalculator.Divide
