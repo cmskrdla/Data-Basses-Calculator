@@ -1,4 +1,5 @@
-﻿Imports System.Text
+﻿Imports System.Diagnostics.CodeAnalysis
+Imports System.Text
 
 Public Class Form1
     Public Sub New()
@@ -7,8 +8,10 @@ Public Class Form1
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
+        btnequalto = False
 
     End Sub
+    Dim btnequalto As New Boolean
 
     Private Sub btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
         TextBox1.AppendText("0")
@@ -61,10 +64,47 @@ Public Class Form1
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         TextBox1.Clear()
     End Sub
+    Dim number1 As Double
+
+    Dim number2 As Double
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        TextBox1.Text = TextBox1.Text.Remove(TextBox1.Text.Length - 1)
     End Sub
 
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+
+        getnumber1()
+        TextBox1.Clear()
+        getNumber2()
+        TextBox1.Clear()
+        Dim number3 As Double
+        'number1+number2 = number3
+        If btnequalto = True Then
+            number1 +number2 = number3 
+            TextBox1.Text = number3
+        Else
+            TextBox1.Clear()
+
+        End If
+        btnequalto = False
+    End Sub
+
+    Private Function getnumber1()
+        number1 = TextBox1.Text
+        Return number1
+    End Function
+    Private Function getNumber2()
+        If btnequalto = True Then
+            number2 = TextBox1.Text
+            Return number2
+        Else Exit Function
+        End If
+    End Function
+
+    Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
+        btnequalto = True
+    End Sub
 
 
     'numbers inserted and named by Clare, Appended and linked by Bern. 
