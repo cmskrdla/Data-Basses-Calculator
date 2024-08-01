@@ -59,12 +59,15 @@ Public Class Form1
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-        TextBox1.Text = ""
+        TextBox1.Clear()
+    End Sub
+
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
     End Sub
 
 
 
-    'numbers inserted and named by Clare, Appended by Bern. 
+    'numbers inserted and named by Clare, Appended and linked by Bern. 
 
     ''button1 will be the 0 button
     ''button2 will be the 1 btn
