@@ -19,7 +19,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnPi_Click(sender As Object, e As EventArgs) Handles btnPi.Click
-        TextBox1.Text.Append("3.14159")
+        TextBox1.AppendText("3.14159")
     End Sub
     Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
         TextBox1.AppendText("2")
@@ -61,6 +61,8 @@ Public Class Form1
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         TextBox1.Text = ""
     End Sub
+
+    'numbers inserted and named by Clare, Appended by Bern. 
 
     ''button1 will be the 0 button
     ''button2 will be the 1 btn
