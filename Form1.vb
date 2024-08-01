@@ -12,7 +12,8 @@
     End Sub
 
     Private Sub btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
-        TextBox1.Text = "1"
+        TextBox1.Text.Append("1")
+        'Bern&Clare
     End Sub
 
     Private Sub btnPi_Click(sender As Object, e As EventArgs) Handles btnPi.Click

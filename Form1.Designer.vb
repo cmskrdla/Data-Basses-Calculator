@@ -51,232 +51,257 @@ Partial Class Form1
         ' 
         ' btn1
         ' 
-        btn1.Location = New Point(240, 200)
+        btn1.Location = New Point(274, 267)
+        btn1.Margin = New Padding(3, 4, 3, 4)
         btn1.Name = "btn1"
-        btn1.Size = New Size(75, 23)
+        btn1.Size = New Size(86, 31)
         btn1.TabIndex = 0
         btn1.Text = "1"
         btn1.UseVisualStyleBackColor = True
         ' 
         ' btn2
         ' 
-        btn2.Location = New Point(320, 200)
+        btn2.Location = New Point(366, 267)
+        btn2.Margin = New Padding(3, 4, 3, 4)
         btn2.Name = "btn2"
-        btn2.Size = New Size(75, 23)
+        btn2.Size = New Size(86, 31)
         btn2.TabIndex = 1
         btn2.Text = "2"
         btn2.UseVisualStyleBackColor = True
         ' 
         ' btn3
         ' 
-        btn3.Location = New Point(408, 200)
+        btn3.Location = New Point(460, 267)
+        btn3.Margin = New Padding(3, 4, 3, 4)
         btn3.Name = "btn3"
-        btn3.Size = New Size(75, 23)
+        btn3.Size = New Size(86, 31)
         btn3.TabIndex = 2
         btn3.Text = "3"
         btn3.UseVisualStyleBackColor = True
         ' 
         ' btn4
         ' 
-        btn4.Location = New Point(240, 168)
+        btn4.Location = New Point(274, 224)
+        btn4.Margin = New Padding(3, 4, 3, 4)
         btn4.Name = "btn4"
-        btn4.Size = New Size(75, 23)
+        btn4.Size = New Size(86, 31)
         btn4.TabIndex = 3
         btn4.Text = "4"
         btn4.UseVisualStyleBackColor = True
         ' 
         ' btn5
         ' 
-        btn5.Location = New Point(320, 168)
+        btn5.Location = New Point(366, 224)
+        btn5.Margin = New Padding(3, 4, 3, 4)
         btn5.Name = "btn5"
-        btn5.Size = New Size(75, 23)
+        btn5.Size = New Size(86, 31)
         btn5.TabIndex = 4
         btn5.Text = "5"
         btn5.UseVisualStyleBackColor = True
         ' 
         ' btn6
         ' 
-        btn6.Location = New Point(408, 168)
+        btn6.Location = New Point(460, 224)
+        btn6.Margin = New Padding(3, 4, 3, 4)
         btn6.Name = "btn6"
-        btn6.Size = New Size(75, 23)
+        btn6.Size = New Size(86, 31)
         btn6.TabIndex = 5
         btn6.Text = "6"
         btn6.UseVisualStyleBackColor = True
         ' 
         ' btn7
         ' 
-        btn7.Location = New Point(240, 136)
+        btn7.Location = New Point(274, 181)
+        btn7.Margin = New Padding(3, 4, 3, 4)
         btn7.Name = "btn7"
-        btn7.Size = New Size(75, 23)
+        btn7.Size = New Size(86, 31)
         btn7.TabIndex = 6
         btn7.Text = "7"
         btn7.UseVisualStyleBackColor = True
         ' 
         ' btn8
         ' 
-        btn8.Location = New Point(320, 136)
+        btn8.Location = New Point(366, 181)
+        btn8.Margin = New Padding(3, 4, 3, 4)
         btn8.Name = "btn8"
-        btn8.Size = New Size(75, 23)
+        btn8.Size = New Size(86, 31)
         btn8.TabIndex = 7
         btn8.Text = "8"
         btn8.UseVisualStyleBackColor = True
         ' 
         ' btn9
         ' 
-        btn9.Location = New Point(408, 136)
+        btn9.Location = New Point(460, 181)
+        btn9.Margin = New Padding(3, 4, 3, 4)
         btn9.Name = "btn9"
-        btn9.Size = New Size(75, 23)
+        btn9.Size = New Size(86, 31)
         btn9.TabIndex = 8
         btn9.Text = "9"
         btn9.UseVisualStyleBackColor = True
         ' 
         ' btn0
         ' 
-        btn0.Location = New Point(240, 232)
+        btn0.Location = New Point(274, 309)
+        btn0.Margin = New Padding(3, 4, 3, 4)
         btn0.Name = "btn0"
-        btn0.Size = New Size(75, 23)
+        btn0.Size = New Size(86, 31)
         btn0.TabIndex = 9
         btn0.Text = "0"
         btn0.UseVisualStyleBackColor = True
         ' 
         ' btnDPoint
         ' 
-        btnDPoint.Location = New Point(320, 232)
+        btnDPoint.Location = New Point(366, 309)
+        btnDPoint.Margin = New Padding(3, 4, 3, 4)
         btnDPoint.Name = "btnDPoint"
-        btnDPoint.Size = New Size(75, 23)
+        btnDPoint.Size = New Size(86, 31)
         btnDPoint.TabIndex = 10
         btnDPoint.Text = "."
         btnDPoint.UseVisualStyleBackColor = True
         ' 
         ' btnDelete
         ' 
-        btnDelete.Location = New Point(408, 232)
+        btnDelete.Location = New Point(460, 309)
+        btnDelete.Margin = New Padding(3, 4, 3, 4)
         btnDelete.Name = "btnDelete"
-        btnDelete.Size = New Size(75, 23)
+        btnDelete.Size = New Size(86, 31)
         btnDelete.TabIndex = 11
         btnDelete.Text = "Delete"
         btnDelete.UseVisualStyleBackColor = True
         ' 
         ' btnEquals
         ' 
-        btnEquals.Location = New Point(488, 232)
+        btnEquals.Location = New Point(552, 309)
+        btnEquals.Margin = New Padding(3, 4, 3, 4)
         btnEquals.Name = "btnEquals"
-        btnEquals.Size = New Size(75, 23)
+        btnEquals.Size = New Size(86, 31)
         btnEquals.TabIndex = 12
         btnEquals.Text = "="
         btnEquals.UseVisualStyleBackColor = True
         ' 
         ' btnAdd
         ' 
-        btnAdd.Location = New Point(488, 200)
+        btnAdd.Location = New Point(552, 267)
+        btnAdd.Margin = New Padding(3, 4, 3, 4)
         btnAdd.Name = "btnAdd"
-        btnAdd.Size = New Size(75, 23)
+        btnAdd.Size = New Size(86, 31)
         btnAdd.TabIndex = 13
         btnAdd.Text = "+"
         btnAdd.UseVisualStyleBackColor = True
         ' 
         ' btnSubtract
         ' 
-        btnSubtract.Location = New Point(488, 168)
+        btnSubtract.Location = New Point(552, 224)
+        btnSubtract.Margin = New Padding(3, 4, 3, 4)
         btnSubtract.Name = "btnSubtract"
-        btnSubtract.Size = New Size(75, 23)
+        btnSubtract.Size = New Size(86, 31)
         btnSubtract.TabIndex = 14
         btnSubtract.Text = "-"
         btnSubtract.UseVisualStyleBackColor = True
         ' 
         ' btnMultiply
         ' 
-        btnMultiply.Location = New Point(488, 136)
+        btnMultiply.Location = New Point(552, 181)
+        btnMultiply.Margin = New Padding(3, 4, 3, 4)
         btnMultiply.Name = "btnMultiply"
-        btnMultiply.Size = New Size(75, 23)
+        btnMultiply.Size = New Size(86, 31)
         btnMultiply.TabIndex = 15
         btnMultiply.Text = "x"
         btnMultiply.UseVisualStyleBackColor = True
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(488, 104)
+        Button1.Location = New Point(552, 139)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
+        Button1.Size = New Size(86, 31)
         Button1.TabIndex = 16
         Button1.Text = "/"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' btnSquared
         ' 
-        btnSquared.Location = New Point(408, 104)
+        btnSquared.Location = New Point(460, 139)
+        btnSquared.Margin = New Padding(3, 4, 3, 4)
         btnSquared.Name = "btnSquared"
-        btnSquared.Size = New Size(75, 23)
+        btnSquared.Size = New Size(86, 31)
         btnSquared.TabIndex = 17
         btnSquared.Text = "x^2"
         btnSquared.UseVisualStyleBackColor = True
         ' 
         ' btnSRoot
         ' 
-        btnSRoot.Location = New Point(320, 104)
+        btnSRoot.Location = New Point(366, 139)
+        btnSRoot.Margin = New Padding(3, 4, 3, 4)
         btnSRoot.Name = "btnSRoot"
-        btnSRoot.Size = New Size(75, 23)
+        btnSRoot.Size = New Size(86, 31)
         btnSRoot.TabIndex = 18
         btnSRoot.Text = "√"
         btnSRoot.UseVisualStyleBackColor = True
         ' 
         ' btnClear
         ' 
-        btnClear.Location = New Point(240, 104)
+        btnClear.Location = New Point(274, 139)
+        btnClear.Margin = New Padding(3, 4, 3, 4)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(75, 23)
+        btnClear.Size = New Size(86, 31)
         btnClear.TabIndex = 19
         btnClear.Text = "Clear"
         btnClear.UseVisualStyleBackColor = True
         ' 
         ' btnRecip
         ' 
-        btnRecip.Location = New Point(240, 72)
+        btnRecip.Location = New Point(274, 96)
+        btnRecip.Margin = New Padding(3, 4, 3, 4)
         btnRecip.Name = "btnRecip"
-        btnRecip.Size = New Size(75, 23)
+        btnRecip.Size = New Size(86, 31)
         btnRecip.TabIndex = 20
         btnRecip.Text = "1/x"
         btnRecip.UseVisualStyleBackColor = True
         ' 
         ' btnPi
         ' 
-        btnPi.Location = New Point(320, 72)
+        btnPi.Location = New Point(366, 96)
+        btnPi.Margin = New Padding(3, 4, 3, 4)
         btnPi.Name = "btnPi"
-        btnPi.Size = New Size(75, 23)
+        btnPi.Size = New Size(86, 31)
         btnPi.TabIndex = 21
         btnPi.Text = "𝜋"
         btnPi.UseVisualStyleBackColor = True
         ' 
         ' btnPower
         ' 
-        btnPower.Location = New Point(408, 72)
+        btnPower.Location = New Point(460, 96)
+        btnPower.Margin = New Padding(3, 4, 3, 4)
         btnPower.Name = "btnPower"
-        btnPower.Size = New Size(75, 23)
+        btnPower.Size = New Size(86, 31)
         btnPower.TabIndex = 22
         btnPower.Text = "^"
         btnPower.UseVisualStyleBackColor = True
         ' 
         ' btnFactorial
         ' 
-        btnFactorial.Location = New Point(488, 72)
+        btnFactorial.Location = New Point(552, 96)
+        btnFactorial.Margin = New Padding(3, 4, 3, 4)
         btnFactorial.Name = "btnFactorial"
-        btnFactorial.Size = New Size(75, 23)
+        btnFactorial.Size = New Size(86, 31)
         btnFactorial.TabIndex = 23
         btnFactorial.Text = "!"
         btnFactorial.UseVisualStyleBackColor = True
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(264, 24)
+        TextBox1.Location = New Point(302, 32)
+        TextBox1.Margin = New Padding(3, 4, 3, 4)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(100, 23)
+        TextBox1.Size = New Size(114, 27)
         TextBox1.TabIndex = 24
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(914, 600)
         Controls.Add(TextBox1)
         Controls.Add(btnFactorial)
         Controls.Add(btnPower)
@@ -302,6 +327,7 @@ Partial Class Form1
         Controls.Add(btn3)
         Controls.Add(btn2)
         Controls.Add(btn1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
