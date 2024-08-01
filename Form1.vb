@@ -80,7 +80,6 @@ Public Class Form1
         Else TextBox1.Text = TextBox1.Text.Remove(TextBox1.Text.Length - 1)
         End If
     End Sub
-
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         getnumber1()
         TextBox1.Clear()
@@ -89,7 +88,6 @@ Public Class Form1
         add()
         number3 = number4
     End Sub
-
     Private Function getnumber1()
         number1 = TextBox1.Text
         Return number1
@@ -104,11 +102,8 @@ Public Class Form1
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
         TextBox1.Text = number3
     End Sub
-
     Private Function add()
-        getNumber2()
-        TextBox1.Clear()
-        number4 = (number2 + number1)
+        number4 = number1 + number2
         Return number4
     End Function
 
