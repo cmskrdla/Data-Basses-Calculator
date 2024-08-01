@@ -1,4 +1,5 @@
 ﻿Imports System.Diagnostics.CodeAnalysis
+Imports System.Security.Cryptography.Xml
 Imports System.Text
 
 Public Class Form1
@@ -69,7 +70,10 @@ Public Class Form1
     Dim number2 As Double
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        TextBox1.Text = TextBox1.Text.Remove(TextBox1.Text.Length - 1)
+        If TextBox1.Text.Length = 0 Then
+            Exit Sub
+        Else TextBox1.Text = TextBox1.Text.Remove(TextBox1.Text.Length - 1)
+        End If
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
@@ -78,16 +82,16 @@ Public Class Form1
         TextBox1.Clear()
         getNumber2()
         TextBox1.Clear()
-        Dim number3 As Double
+        'Dim number3 As Double
         'number1+number2 = number3
-        If btnequalto = True Then
-            number1 +number2 = number3 
-            TextBox1.Text = number3
-        Else
-            TextBox1.Clear()
+        'number3 =Do.add({number1} + {number2}) End Do
+        'If btnequalto = True Then
+        '    TextBox1.Text = number3
+        'Else
+        '    TextBox1.Clear()
 
-        End If
-        btnequalto = False
+        'End If
+        'btnequalto = False
     End Sub
 
     Private Function getnumber1()
