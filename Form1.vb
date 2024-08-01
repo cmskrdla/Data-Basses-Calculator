@@ -19,6 +19,10 @@
 
     End Sub
 
+    Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
+        TextBox1.Text = "2"
+    End Sub
+
     ''button1 will be the 0 button
     ''button2 will be the 1 btn
     ''button3 will be 23
