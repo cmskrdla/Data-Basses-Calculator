@@ -82,6 +82,10 @@ Public Class Form1
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        getnumber1()
+        TextBox1.Clear()
+        getNumber2()
+        TextBox1.Clear()
         add()
         number3 = number4
     End Sub
@@ -91,7 +95,9 @@ Public Class Form1
         Return number1
     End Function
     Private Function getNumber2()
-        number2 = TextBox1.Text
+        Dim isThereANumber2 As Boolean
+        If TextBox1.Text = "" Then isThereANumber2 = False
+        If isThereANumber2 = True Then number2 = TextBox1.Text
         Return number2
     End Function
 
@@ -100,12 +106,9 @@ Public Class Form1
     End Sub
 
     Private Function add()
-        getnumber1()
-        TextBox1.Clear()
-        'read line
         getNumber2()
         TextBox1.Clear()
-        number4 = number1 + number2
+        number4 = (number2 + number1)
         Return number4
     End Function
 
