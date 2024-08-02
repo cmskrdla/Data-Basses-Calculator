@@ -85,20 +85,26 @@ Public Class Form1
         TextBox1.Clear()
         getNumber2()
         TextBox1.Clear()
+        operation = 
     End Sub
     Private Function getnumber1()
         number1 = TextBox1.Text
         Return number1
     End Function
-
     Private Function getNumber2()
         number2 = TextBox1.Text
         Return number2
     End Function
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
+        Select Case operation
+            Case + 
+
+
+        End Select
+
         getNumber2()
-        TextBox1.Text = number3
+            TextBox1.Text = number3
     End Sub
 
     'numbers inserted and named by Clare, Appended and linked by Bern. 
