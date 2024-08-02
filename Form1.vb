@@ -73,7 +73,7 @@ Public Class Form1
 
     Dim number3 As Double
 
-    Dim number4 As Double
+    Dim operation As String
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If TextBox1.Text.Length = 0 Then
             Exit Sub
@@ -86,13 +86,11 @@ Public Class Form1
         getNumber2()
         TextBox1.Clear()
         add()
-        number3 = number4
     End Sub
     Private Function getnumber1()
         number1 = TextBox1.Text
         Return number1
     End Function
-    Dim operation As String
 
     Private Function getNumber2()
         number2 = TextBox1.Text
@@ -103,10 +101,6 @@ Public Class Form1
         getNumber2()
         TextBox1.Text = number3
     End Sub
-    Private Function add()
-        number4 = (number1 + number2)
-        Return number4
-    End Function
 
     'numbers inserted and named by Clare, Appended and linked by Bern. 
 
