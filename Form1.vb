@@ -115,6 +115,10 @@ Public Class Form1
             Case "make like a rabbit"
 
                 TextBox1.Text = number1 * number2
+            Case "With great power"
+                Dim uncleben As Double = number1 ^ number2
+                TextBox1.Text = uncleben
+
             Case "divide and conquer"
                 If number2 = 0 Then
                     Panel1.BackColor = Color.Red
@@ -171,6 +175,14 @@ Public Class Form1
         getnumber1()
         TextBox1.Text = 1 / number1
     End Sub
+
+    Private Sub btnPower_Click(sender As Object, e As EventArgs) Handles btnPower.Click
+        getnumber1()
+        TextBox1.Clear()
+        operation = "With great power"
+    End Sub
+
+
 
 
 
