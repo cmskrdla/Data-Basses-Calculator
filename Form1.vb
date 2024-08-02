@@ -108,7 +108,15 @@ Public Class Form1
             Case "devide and conquer"
                 getNumber2()
                 If number2 = 0 Then
-                    Panel1.BackColor.set.Red
+                    Panel1.BackColor(red)
+                    Beep()
+                    TextBox1.ForeColor(red)
+                    Beep()
+                    TextBox1.Text = "Self destruct sequence initiated"
+                    Beep()
+                    Beep()
+                    Beep()
+                    Beep()
                 Else textbox1.Text = number1 \ number2
                 End If
         End Select
