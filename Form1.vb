@@ -74,6 +74,8 @@ Public Class Form1
     Dim number3 As Double
 
     Dim operation As String
+    Dim add As String
+    Dim subtract As String
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If TextBox1.Text.Length = 0 Then
             Exit Sub
@@ -83,9 +85,7 @@ Public Class Form1
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         getnumber1()
         TextBox1.Clear()
-        getNumber2()
-        TextBox1.Clear()
-        operation = 
+        operation = "add"
     End Sub
     Private Function getnumber1()
         number1 = TextBox1.Text
@@ -98,14 +98,38 @@ Public Class Form1
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
         Select Case operation
-            Case + 
-
-
+            Case "add"
+                getNumber2()
+                TextBox1.Text = (number1 + number2)
+            Case "subtract"
+                getNumber2()
+                TextBox1.Text = (number1 - number2)
+            Case "make like a rabbit"
+                getNumber2()
+                TextBox1.Text = (number1 * number2)
+            Case "devide and conquer"
+                getNumber2()
+                TextBox1.Text = (number1 \ number2)
         End Select
-
-        getNumber2()
-            TextBox1.Text = number3
     End Sub
+    Private Sub btnSubtract_Click(sender As Object, e As EventArgs) Handles btnSubtract.Click
+        getnumber1()
+        TextBox1.Clear()
+        operation = "subtract"
+    End Sub
+
+    Private Sub btnMultiply_Click(sender As Object, e As EventArgs) Handles btnMultiply.Click
+        getnumber1()
+        TextBox1.Clear()
+        operation = "make like a rabbit"
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        getnumber1()
+        TextBox1.Clear()
+        operation = "devide and conquer"
+    End Sub
+
 
     'numbers inserted and named by Clare, Appended and linked by Bern. 
 
