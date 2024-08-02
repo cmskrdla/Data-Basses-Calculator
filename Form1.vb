@@ -92,18 +92,19 @@ Public Class Form1
         number1 = TextBox1.Text
         Return number1
     End Function
+    Dim operation As String
+
     Private Function getNumber2()
-        Dim isThereANumber2 As Boolean
-        If TextBox1.Text = "" Then isThereANumber2 = False
-        If isThereANumber2 = True Then number2 = TextBox1.Text
+        number2 = TextBox1.Text
         Return number2
     End Function
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
+        getNumber2()
         TextBox1.Text = number3
     End Sub
     Private Function add()
-        number4 = number1 + number2
+        number4 = (number1 + number2)
         Return number4
     End Function
 
