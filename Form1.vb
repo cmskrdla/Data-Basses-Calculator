@@ -1,4 +1,5 @@
 ﻿Imports System.CodeDom
+Imports System.ComponentModel.DataAnnotations
 Imports System.Diagnostics.CodeAnalysis
 Imports System.Globalization
 Imports System.Security.Cryptography.Xml
@@ -105,31 +106,33 @@ Public Class Form1
         getNumber2()
 
         Select Case operation
-                Case "add"
+            Case "add"
 
-                    TextBox1.Text = number1 + number2
-                Case "subtract"
+                TextBox1.Text = number1 + number2
+            Case "subtract"
 
-                    TextBox1.Text = number1 - number2
-                Case "make like a rabbit"
+                TextBox1.Text = number1 - number2
+            Case "make like a rabbit"
 
-                    TextBox1.Text = number1 * number2
-                Case "divide and conquer"
-                    If number2 = 0 Then
-                        MessageBox.Show("You can't divide by 0")
-                        MessageBox.Show("Self desctruct sequence initiated")
-                        Beep()
-                        MessageBox.Show("three")
-                        Beep()
-                        MessageBox.Show("two")
-                        Beep()
-                        MessageBox.Show("one")
-                        Beep()
-                        MessageBox.Show("Just kidding. But seriously, don't divide by 0")
-                        'Panel1.BackColor.set.Red
-                    Else TextBox1.Text = number1 \ number2
-                    End If
-            End Select
+                TextBox1.Text = number1 * number2
+            Case "divide and conquer"
+                If number2 = 0 Then
+                    Panel1.BackColor = Color.Red
+                    MessageBox.Show("You can't divide by 0")
+                    MessageBox.Show("Self desctruct sequence initiated")
+                    Beep()
+                    MessageBox.Show("three")
+                    Beep()
+                    MessageBox.Show("two")
+                    Beep()
+                    MessageBox.Show("one")
+                    Beep()
+                    MessageBox.Show("KABOOM!!!")
+                    Beep()
+                    MessageBox.Show("Just kidding. But seriously, don't divide by 0")
+                Else TextBox1.Text = number1 \ number2
+                End If
+        End Select
 
     End Sub
     Private Sub btnSubtract_Click(sender As Object, e As EventArgs) Handles btnSubtract.Click
