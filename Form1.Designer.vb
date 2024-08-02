@@ -202,6 +202,7 @@ Partial Class Form1
         btnAdd.Size = New Size(86, 31)
         btnAdd.TabIndex = 13
         btnAdd.Text = "&+"
+        ToolTip1.SetToolTip(btnAdd, "w")
         btnAdd.UseVisualStyleBackColor = True
         ' 
         ' btnSubtract
@@ -212,6 +213,7 @@ Partial Class Form1
         btnSubtract.Size = New Size(86, 31)
         btnSubtract.TabIndex = 14
         btnSubtract.Text = "&-"
+        ToolTip1.SetToolTip(btnSubtract, "orks")
         btnSubtract.UseVisualStyleBackColor = True
         ' 
         ' btnMultiply
@@ -222,6 +224,7 @@ Partial Class Form1
         btnMultiply.Size = New Size(86, 31)
         btnMultiply.TabIndex = 15
         btnMultiply.Text = "&x"
+        ToolTip1.SetToolTip(btnMultiply, "wworks")
         btnMultiply.UseVisualStyleBackColor = True
         ' 
         ' Button1
@@ -232,6 +235,7 @@ Partial Class Form1
         Button1.Size = New Size(86, 31)
         Button1.TabIndex = 16
         Button1.Text = "&/"
+        ToolTip1.SetToolTip(Button1, "works!")
         Button1.UseVisualStyleBackColor = True
         ' 
         ' btnSquared

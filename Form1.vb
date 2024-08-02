@@ -74,8 +74,6 @@ Public Class Form1
     Dim number3 As Double
 
     Dim operation As String
-    Dim add As String
-    Dim subtract As String
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If TextBox1.Text.Length = 0 Then
             Exit Sub
@@ -100,16 +98,19 @@ Public Class Form1
         Select Case operation
             Case "add"
                 getNumber2()
-                TextBox1.Text = (number1 + number2)
+                TextBox1.Text = number1 + number2
             Case "subtract"
                 getNumber2()
-                TextBox1.Text = (number1 - number2)
+                TextBox1.Text = number1 - number2
             Case "make like a rabbit"
                 getNumber2()
-                TextBox1.Text = (number1 * number2)
+                TextBox1.Text = number1 * number2
             Case "devide and conquer"
                 getNumber2()
-                TextBox1.Text = (number1 \ number2)
+                If number2 = 0 Then
+                    Panel1.BackColor.set.Red
+                Else textbox1.Text = number1 \ number2
+                End If
         End Select
     End Sub
     Private Sub btnSubtract_Click(sender As Object, e As EventArgs) Handles btnSubtract.Click
@@ -129,6 +130,11 @@ Public Class Form1
         TextBox1.Clear()
         operation = "devide and conquer"
     End Sub
+
+    Private Sub btnDPoint_Click(sender As Object, e As EventArgs) Handles btnDPoint.Click
+        TextBox1.AppendText(".")
+    End Sub
+
 
 
     'numbers inserted and named by Clare, Appended and linked by Bern. 
