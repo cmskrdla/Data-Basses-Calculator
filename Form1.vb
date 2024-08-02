@@ -103,23 +103,22 @@ Public Class Form1
     End Function
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
-        getNumber2()
-
         Select Case operation
             Case "add"
-
+                getNumber2()
                 TextBox1.Text = number1 + number2
             Case "subtract"
-
+                getNumber2()
                 TextBox1.Text = number1 - number2
             Case "make like a rabbit"
-
+                getNumber2()
                 TextBox1.Text = number1 * number2
             Case "With great power"
+                getNumber2()
                 Dim uncleben As Double = number1 ^ number2
                 TextBox1.Text = uncleben
-
             Case "divide and conquer"
+                getNumber2()
                 If number2 = 0 Then
                     Panel1.BackColor = Color.Red
                     MessageBox.Show("You can't divide by 0")
@@ -136,6 +135,10 @@ Public Class Form1
                     MessageBox.Show("Just kidding. But seriously, don't divide by 0")
                 Else TextBox1.Text = number1 \ number2
                 End If
+            Case "I am Root"
+                Dim Groot As Double
+                Groot = Math.Sqrt(number1)
+                TextBox1.Text = Groot
         End Select
 
     End Sub
@@ -182,8 +185,15 @@ Public Class Form1
         operation = "With great power"
     End Sub
 
-
-
+    Private Sub btnSRoot_Click(sender As Object, e As EventArgs) Handles btnSRoot.Click
+        If TextBox1.Text = "" Then
+            TextBox1.Text = "please put square root after number (thats just how it works)"
+        Else
+            getnumber1()
+            TextBox1.Text = $"√{number1}"
+            operation = "I am Root"
+        End If
+    End Sub
 
 
     'numbers inserted and named by Clare, Appended and linked by Bern. 
