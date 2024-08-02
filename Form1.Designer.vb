@@ -49,15 +49,17 @@ Partial Class Form1
         btnFactorial = New Button()
         TextBox1 = New TextBox()
         Panel1 = New Panel()
+        BtnNelly = New Button()
         ToolTip1 = New ToolTip(components)
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' btn1
         ' 
-        btn1.Location = New Point(21, 144)
+        btn1.Location = New Point(24, 192)
+        btn1.Margin = New Padding(3, 4, 3, 4)
         btn1.Name = "btn1"
-        btn1.Size = New Size(75, 23)
+        btn1.Size = New Size(86, 31)
         btn1.TabIndex = 0
         btn1.Text = "&1"
         ToolTip1.SetToolTip(btn1, "works")
@@ -65,9 +67,10 @@ Partial Class Form1
         ' 
         ' btn2
         ' 
-        btn2.Location = New Point(98, 144)
+        btn2.Location = New Point(112, 192)
+        btn2.Margin = New Padding(3, 4, 3, 4)
         btn2.Name = "btn2"
-        btn2.Size = New Size(75, 23)
+        btn2.Size = New Size(86, 31)
         btn2.TabIndex = 1
         btn2.Text = "&2"
         ToolTip1.SetToolTip(btn2, "works")
@@ -75,9 +78,10 @@ Partial Class Form1
         ' 
         ' btn3
         ' 
-        btn3.Location = New Point(175, 144)
+        btn3.Location = New Point(200, 192)
+        btn3.Margin = New Padding(3, 4, 3, 4)
         btn3.Name = "btn3"
-        btn3.Size = New Size(75, 23)
+        btn3.Size = New Size(86, 31)
         btn3.TabIndex = 2
         btn3.Text = "&3"
         ToolTip1.SetToolTip(btn3, "works")
@@ -85,9 +89,10 @@ Partial Class Form1
         ' 
         ' btn4
         ' 
-        btn4.Location = New Point(21, 120)
+        btn4.Location = New Point(24, 160)
+        btn4.Margin = New Padding(3, 4, 3, 4)
         btn4.Name = "btn4"
-        btn4.Size = New Size(75, 23)
+        btn4.Size = New Size(86, 31)
         btn4.TabIndex = 3
         btn4.Text = "&4"
         ToolTip1.SetToolTip(btn4, "works")
@@ -95,9 +100,10 @@ Partial Class Form1
         ' 
         ' btn5
         ' 
-        btn5.Location = New Point(98, 120)
+        btn5.Location = New Point(112, 160)
+        btn5.Margin = New Padding(3, 4, 3, 4)
         btn5.Name = "btn5"
-        btn5.Size = New Size(75, 23)
+        btn5.Size = New Size(86, 31)
         btn5.TabIndex = 4
         btn5.Text = "&5"
         ToolTip1.SetToolTip(btn5, "works")
@@ -105,9 +111,10 @@ Partial Class Form1
         ' 
         ' btn6
         ' 
-        btn6.Location = New Point(175, 120)
+        btn6.Location = New Point(200, 160)
+        btn6.Margin = New Padding(3, 4, 3, 4)
         btn6.Name = "btn6"
-        btn6.Size = New Size(75, 23)
+        btn6.Size = New Size(86, 31)
         btn6.TabIndex = 5
         btn6.Text = "&6"
         ToolTip1.SetToolTip(btn6, "works")
@@ -115,9 +122,10 @@ Partial Class Form1
         ' 
         ' btn7
         ' 
-        btn7.Location = New Point(21, 96)
+        btn7.Location = New Point(24, 128)
+        btn7.Margin = New Padding(3, 4, 3, 4)
         btn7.Name = "btn7"
-        btn7.Size = New Size(75, 23)
+        btn7.Size = New Size(86, 31)
         btn7.TabIndex = 6
         btn7.Text = "&7"
         ToolTip1.SetToolTip(btn7, "works")
@@ -125,9 +133,10 @@ Partial Class Form1
         ' 
         ' btn8
         ' 
-        btn8.Location = New Point(98, 96)
+        btn8.Location = New Point(112, 128)
+        btn8.Margin = New Padding(3, 4, 3, 4)
         btn8.Name = "btn8"
-        btn8.Size = New Size(75, 23)
+        btn8.Size = New Size(86, 31)
         btn8.TabIndex = 7
         btn8.Text = "&8"
         ToolTip1.SetToolTip(btn8, "works")
@@ -135,9 +144,10 @@ Partial Class Form1
         ' 
         ' btn9
         ' 
-        btn9.Location = New Point(175, 96)
+        btn9.Location = New Point(200, 128)
+        btn9.Margin = New Padding(3, 4, 3, 4)
         btn9.Name = "btn9"
-        btn9.Size = New Size(75, 23)
+        btn9.Size = New Size(86, 31)
         btn9.TabIndex = 8
         btn9.Text = "&9"
         ToolTip1.SetToolTip(btn9, "works")
@@ -145,9 +155,10 @@ Partial Class Form1
         ' 
         ' btn0
         ' 
-        btn0.Location = New Point(98, 168)
+        btn0.Location = New Point(112, 224)
+        btn0.Margin = New Padding(3, 4, 3, 4)
         btn0.Name = "btn0"
-        btn0.Size = New Size(75, 23)
+        btn0.Size = New Size(86, 31)
         btn0.TabIndex = 9
         btn0.Text = "&0"
         ToolTip1.SetToolTip(btn0, "works")
@@ -155,9 +166,10 @@ Partial Class Form1
         ' 
         ' btnDPoint
         ' 
-        btnDPoint.Location = New Point(21, 168)
+        btnDPoint.Location = New Point(24, 224)
+        btnDPoint.Margin = New Padding(3, 4, 3, 4)
         btnDPoint.Name = "btnDPoint"
-        btnDPoint.Size = New Size(75, 23)
+        btnDPoint.Size = New Size(86, 31)
         btnDPoint.TabIndex = 10
         btnDPoint.Text = "."
         ToolTip1.SetToolTip(btnDPoint, "works")
@@ -165,9 +177,10 @@ Partial Class Form1
         ' 
         ' btnDelete
         ' 
-        btnDelete.Location = New Point(175, 168)
+        btnDelete.Location = New Point(288, 160)
+        btnDelete.Margin = New Padding(3, 4, 3, 4)
         btnDelete.Name = "btnDelete"
-        btnDelete.Size = New Size(75, 23)
+        btnDelete.Size = New Size(86, 31)
         btnDelete.TabIndex = 11
         btnDelete.Text = "&Delete"
         btnDelete.UseVisualStyleBackColor = True
@@ -175,18 +188,20 @@ Partial Class Form1
         ' btnEquals
         ' 
         btnEquals.Font = New Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnEquals.Location = New Point(252, 144)
+        btnEquals.Location = New Point(288, 192)
+        btnEquals.Margin = New Padding(3, 4, 3, 4)
         btnEquals.Name = "btnEquals"
-        btnEquals.Size = New Size(75, 47)
+        btnEquals.Size = New Size(86, 63)
         btnEquals.TabIndex = 12
         btnEquals.Text = "="
         btnEquals.UseVisualStyleBackColor = True
         ' 
         ' btnAdd
         ' 
-        btnAdd.Location = New Point(252, 72)
+        btnAdd.Location = New Point(288, 96)
+        btnAdd.Margin = New Padding(3, 4, 3, 4)
         btnAdd.Name = "btnAdd"
-        btnAdd.Size = New Size(75, 23)
+        btnAdd.Size = New Size(86, 31)
         btnAdd.TabIndex = 13
         btnAdd.Text = "&+"
         ToolTip1.SetToolTip(btnAdd, "w")
@@ -194,19 +209,21 @@ Partial Class Form1
         ' 
         ' btnSubtract
         ' 
-        btnSubtract.Location = New Point(175, 72)
+        btnSubtract.Location = New Point(200, 96)
+        btnSubtract.Margin = New Padding(3, 4, 3, 4)
         btnSubtract.Name = "btnSubtract"
-        btnSubtract.Size = New Size(75, 23)
+        btnSubtract.Size = New Size(86, 31)
         btnSubtract.TabIndex = 14
-        btnSubtract.Text = "&-"
+        btnSubtract.Text = "-"
         ToolTip1.SetToolTip(btnSubtract, "orks")
         btnSubtract.UseVisualStyleBackColor = True
         ' 
         ' btnMultiply
         ' 
-        btnMultiply.Location = New Point(98, 72)
+        btnMultiply.Location = New Point(112, 96)
+        btnMultiply.Margin = New Padding(3, 4, 3, 4)
         btnMultiply.Name = "btnMultiply"
-        btnMultiply.Size = New Size(75, 23)
+        btnMultiply.Size = New Size(86, 31)
         btnMultiply.TabIndex = 15
         btnMultiply.Text = "&x"
         ToolTip1.SetToolTip(btnMultiply, "wworks")
@@ -214,9 +231,10 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(21, 72)
+        Button1.Location = New Point(24, 96)
+        Button1.Margin = New Padding(3, 4, 3, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
+        Button1.Size = New Size(86, 31)
         Button1.TabIndex = 16
         Button1.Text = "&/"
         ToolTip1.SetToolTip(Button1, "works!")
@@ -225,9 +243,10 @@ Partial Class Form1
         ' btnSquared
         ' 
         btnSquared.Font = New Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnSquared.Location = New Point(231, 48)
+        btnSquared.Location = New Point(264, 64)
+        btnSquared.Margin = New Padding(3, 4, 3, 4)
         btnSquared.Name = "btnSquared"
-        btnSquared.Size = New Size(49, 23)
+        btnSquared.Size = New Size(56, 31)
         btnSquared.TabIndex = 17
         btnSquared.Text = "x^2"
         ToolTip1.SetToolTip(btnSquared, "works")
@@ -235,18 +254,21 @@ Partial Class Form1
         ' 
         ' btnSRoot
         ' 
-        btnSRoot.Location = New Point(280, 48)
+        btnSRoot.Location = New Point(320, 64)
+        btnSRoot.Margin = New Padding(3, 4, 3, 4)
         btnSRoot.Name = "btnSRoot"
-        btnSRoot.Size = New Size(49, 23)
+        btnSRoot.Size = New Size(56, 31)
         btnSRoot.TabIndex = 18
         btnSRoot.Text = "√"
+        ToolTip1.SetToolTip(btnSRoot, "Works")
         btnSRoot.UseVisualStyleBackColor = True
         ' 
         ' btnClear
         ' 
-        btnClear.Location = New Point(252, 96)
+        btnClear.Location = New Point(288, 128)
+        btnClear.Margin = New Padding(3, 4, 3, 4)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(75, 48)
+        btnClear.Size = New Size(86, 32)
         btnClear.TabIndex = 19
         btnClear.Text = "&Clear"
         ToolTip1.SetToolTip(btnClear, "works")
@@ -254,9 +276,10 @@ Partial Class Form1
         ' 
         ' btnRecip
         ' 
-        btnRecip.Location = New Point(21, 48)
+        btnRecip.Location = New Point(24, 64)
+        btnRecip.Margin = New Padding(3, 4, 3, 4)
         btnRecip.Name = "btnRecip"
-        btnRecip.Size = New Size(49, 23)
+        btnRecip.Size = New Size(56, 31)
         btnRecip.TabIndex = 20
         btnRecip.Text = "1/x"
         ToolTip1.SetToolTip(btnRecip, "works")
@@ -264,9 +287,10 @@ Partial Class Form1
         ' 
         ' btnPi
         ' 
-        btnPi.Location = New Point(70, 48)
+        btnPi.Location = New Point(80, 64)
+        btnPi.Margin = New Padding(3, 4, 3, 4)
         btnPi.Name = "btnPi"
-        btnPi.Size = New Size(49, 23)
+        btnPi.Size = New Size(56, 31)
         btnPi.TabIndex = 21
         btnPi.Text = "𝜋"
         ToolTip1.SetToolTip(btnPi, "works")
@@ -274,18 +298,20 @@ Partial Class Form1
         ' 
         ' btnPower
         ' 
-        btnPower.Location = New Point(119, 48)
+        btnPower.Location = New Point(136, 64)
+        btnPower.Margin = New Padding(3, 4, 3, 4)
         btnPower.Name = "btnPower"
-        btnPower.Size = New Size(49, 23)
+        btnPower.Size = New Size(56, 31)
         btnPower.TabIndex = 22
         btnPower.Text = "^"
         btnPower.UseVisualStyleBackColor = True
         ' 
         ' btnFactorial
         ' 
-        btnFactorial.Location = New Point(182, 48)
+        btnFactorial.Location = New Point(208, 64)
+        btnFactorial.Margin = New Padding(3, 4, 3, 4)
         btnFactorial.Name = "btnFactorial"
-        btnFactorial.Size = New Size(49, 23)
+        btnFactorial.Size = New Size(56, 31)
         btnFactorial.TabIndex = 23
         btnFactorial.Text = "!"
         btnFactorial.UseVisualStyleBackColor = True
@@ -294,15 +320,17 @@ Partial Class Form1
         ' 
         TextBox1.Anchor = AnchorStyles.Top
         TextBox1.Font = New Font("Cascadia Code", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.Location = New Point(14, 12)
+        TextBox1.Location = New Point(16, 16)
+        TextBox1.Margin = New Padding(3, 4, 3, 4)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(322, 38)
+        TextBox1.Size = New Size(367, 46)
         TextBox1.TabIndex = 24
         ToolTip1.SetToolTip(TextBox1, "Enter Problem")
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = SystemColors.ControlDarkDark
+        Panel1.Controls.Add(BtnNelly)
         Panel1.Controls.Add(btnClear)
         Panel1.Controls.Add(TextBox1)
         Panel1.Controls.Add(btnFactorial)
@@ -329,18 +357,27 @@ Partial Class Form1
         Panel1.Controls.Add(btn2)
         Panel1.Controls.Add(btn1)
         Panel1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Panel1.Location = New Point(140, 36)
-        Panel1.Margin = New Padding(3, 2, 3, 2)
+        Panel1.Location = New Point(160, 48)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(343, 300)
+        Panel1.Size = New Size(392, 400)
         Panel1.TabIndex = 25
+        ' 
+        ' BtnNelly
+        ' 
+        BtnNelly.Location = New Point(200, 224)
+        BtnNelly.Name = "BtnNelly"
+        BtnNelly.Size = New Size(88, 29)
+        BtnNelly.TabIndex = 26
+        BtnNelly.Text = "(&-)"
+        BtnNelly.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(914, 600)
         Controls.Add(Panel1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Form1"
         Text = "Form1"
         Panel1.ResumeLayout(False)
@@ -375,5 +412,6 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents BtnNelly As Button
 
 End Class

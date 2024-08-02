@@ -136,9 +136,18 @@ Public Class Form1
                 Else TextBox1.Text = number1 \ number2
                 End If
             Case "I am Root"
-                Dim Groot As Double
-                Groot = Math.Sqrt(number1)
-                TextBox1.Text = Groot
+                If number1 = -1 Then
+                    Beep()
+                    MessageBox.Show("i")
+                    MessageBox.Show("Keepitreal!")
+                    MessageBox.Show("Thats not a number")
+                    MessageBox.Show("That's unreal!")
+                    MessageBox.Show("theres no i in math!")
+                Else
+                    Dim Groot As Double
+                    Groot = Math.Sqrt(number1)
+                    TextBox1.Text = Groot
+                End If
         End Select
 
     End Sub
@@ -194,6 +203,16 @@ Public Class Form1
             operation = "I am Root"
         End If
     End Sub
+
+    Private Sub btnFactorial_Click(sender As Object, e As EventArgs) Handles btnFactorial.Click
+        TextBox1.Text = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnNelly.Click
+        TextBox1.AppendText("-")
+    End Sub
+
+
 
 
     'numbers inserted and named by Clare, Appended and linked by Bern. 
