@@ -11,10 +11,10 @@ Public Class Form1
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        btnequalto = False
+
 
     End Sub
-    Dim btnequalto As New Boolean
+
 
     Private Sub btn0_Click(sender As Object, e As EventArgs) Handles btn0.Click
         TextBox1.AppendText("0")
@@ -25,7 +25,14 @@ Public Class Form1
     End Sub
 
     Private Sub btnPi_Click(sender As Object, e As EventArgs) Handles btnPi.Click
-        TextBox1.AppendText("3.14159")
+        Dim srt As String = TextBox1.Text
+        If srt.Contains("3.14159") = True Then
+            MessageBox.Show("No seconds on pie!")
+        ElseIf srt.Contains(".") = True Then
+            Exit Sub
+        Else
+            TextBox1.AppendText("3.14159")
+        End If
     End Sub
     Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
         TextBox1.AppendText("2")
@@ -95,31 +102,35 @@ Public Class Form1
     End Function
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
+        getNumber2()
+
         Select Case operation
-            Case "add"
-                getNumber2()
-                TextBox1.Text = number1 + number2
-            Case "subtract"
-                getNumber2()
-                TextBox1.Text = number1 - number2
-            Case "make like a rabbit"
-                getNumber2()
-                TextBox1.Text = number1 * number2
-            Case "devide and conquer"
-                getNumber2()
-                If number2 = 0 Then
-                    Panel1.BackColor(red)
-                    Beep()
-                    TextBox1.ForeColor(red)
-                    Beep()
-                    TextBox1.Text = "Self destruct sequence initiated"
-                    Beep()
-                    Beep()
-                    Beep()
-                    Beep()
-                Else textbox1.Text = number1 \ number2
-                End If
-        End Select
+                Case "add"
+
+                    TextBox1.Text = number1 + number2
+                Case "subtract"
+
+                    TextBox1.Text = number1 - number2
+                Case "make like a rabbit"
+
+                    TextBox1.Text = number1 * number2
+                Case "divide and conquer"
+                    If number2 = 0 Then
+                        MessageBox.Show("You can't divide by 0")
+                        MessageBox.Show("Self desctruct sequence initiated")
+                        Beep()
+                        MessageBox.Show("three")
+                        Beep()
+                        MessageBox.Show("two")
+                        Beep()
+                        MessageBox.Show("one")
+                        Beep()
+                        MessageBox.Show("Just kidding. But seriously, don't divide by 0")
+                        'Panel1.BackColor.set.Red
+                    Else TextBox1.Text = number1 \ number2
+                    End If
+            End Select
+
     End Sub
     Private Sub btnSubtract_Click(sender As Object, e As EventArgs) Handles btnSubtract.Click
         getnumber1()
@@ -136,11 +147,26 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         getnumber1()
         TextBox1.Clear()
-        operation = "devide and conquer"
+        operation = "divide and conquer"
+    End Sub
+    Private Sub btnDPoint_Click(sender As Object, e As EventArgs) Handles btnDPoint.Click
+        Dim s As String = TextBox1.Text
+        If s.Contains(".") = True Then
+            Exit Sub
+        Else
+            TextBox1.AppendText(".")
+        End If
+
     End Sub
 
-    Private Sub btnDPoint_Click(sender As Object, e As EventArgs) Handles btnDPoint.Click
-        TextBox1.AppendText(".")
+    Private Sub btnSquared_Click(sender As Object, e As EventArgs) Handles btnSquared.Click
+        getnumber1()
+        TextBox1.Text = number1 * number1
+    End Sub
+
+    Private Sub btnRecip_Click(sender As Object, e As EventArgs) Handles btnRecip.Click
+        getnumber1()
+        TextBox1.Text = 1 / number1
     End Sub
 
 
