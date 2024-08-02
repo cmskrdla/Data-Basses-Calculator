@@ -148,6 +148,18 @@ Public Class Form1
                     Groot = Math.Sqrt(number1)
                     TextBox1.Text = Groot
                 End If
+            Case "!!!"
+                ''
+                '                Dim result As Double = number1
+
+                '                Do Until result = 1
+
+                '                    result = number1 * (number1 - 1)
+                '                    number1 = (number1 - 1)
+
+                '                Loop
+
+                '                TextBox1.Text = result'
         End Select
 
     End Sub
@@ -206,6 +218,10 @@ Public Class Form1
 
     Private Sub btnFactorial_Click(sender As Object, e As EventArgs) Handles btnFactorial.Click
         TextBox1.Text = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+        'getnumber1()
+        'TextBox1.AppendText("!")
+
+        'operation = "!!!"
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnNelly.Click
