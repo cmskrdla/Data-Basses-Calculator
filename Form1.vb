@@ -85,7 +85,6 @@ Public Class Form1
         TextBox1.Clear()
         getNumber2()
         TextBox1.Clear()
-        add()
     End Sub
     Private Function getnumber1()
         number1 = TextBox1.Text
