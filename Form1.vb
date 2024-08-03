@@ -149,6 +149,7 @@ Public Class Form1
                     TextBox1.Text = Groot
                 End If
             Case "!!!"
+                TextBox1.Text = dofactorial(number1)
                 ''
                 '                Dim result As Double = number1
 
@@ -217,12 +218,25 @@ Public Class Form1
     End Sub
 
     Private Sub btnFactorial_Click(sender As Object, e As EventArgs) Handles btnFactorial.Click
-        TextBox1.Text = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+        'TextBox1.Text = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
         'getnumber1()
-        'TextBox1.AppendText("!")
-
-        'operation = "!!!"
+        getnumber1()
+        TextBox1.AppendText("!")
+        operation = "!!!"
     End Sub
+
+
+
+    Private Function dofactorial(number1 As Double) As Integer
+
+        If number1 <= 1 Then
+            Return 1
+        Else
+            Return number1 * dofactorial(number1 - 1)
+
+        End If
+
+    End Function
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnNelly.Click
         TextBox1.AppendText("-")
